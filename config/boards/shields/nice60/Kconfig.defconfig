@@ -1,0 +1,10 @@
+
+if SHIELD_NICE60
+
+config ZMK_KEYBOARD_NAME
+	default "nice!60"
+
+config ZMK_RGB_UNDERGLOW
+	default y
+
+endif
