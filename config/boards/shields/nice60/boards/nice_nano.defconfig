@@ -1,0 +1,6 @@
+if SHIELD_NICE60
+
+config SPI
+	default y
+
+endif

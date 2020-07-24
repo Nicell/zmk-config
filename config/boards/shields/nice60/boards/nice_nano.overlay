@@ -1,4 +1,3 @@
-/* TODO: Needs testing */
 &spi0 {
 	compatible = "nordic,nrf-spi";
 	/* Cannot be used together with i2c0. */
@@ -7,7 +6,7 @@
 	mosi-pin = <22>;
 	miso-pin = <12>;
 
-  led_strip: ws2812@0 {
+	led_strip: ws2812@0 {
 		compatible = "worldsemi,ws2812-spi";
 		label = "WS2812";
 
@@ -17,7 +16,13 @@
 
 		/* WS2812 */
 		chain-length = <8>; /* arbitrary; change at will */
-		spi-one-frame = <O0x70>;
+		spi-one-frame = <0x70>;
 		spi-zero-frame = <0x40>;
+	};
+};
+
+/ {
+	aliases {
+		led-strip = &led_strip;
 	};
 };

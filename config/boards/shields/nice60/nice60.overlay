@@ -59,10 +59,6 @@ RC(7,0)    RC(7,1)   RC(7,2)                     RC(7,3)                    RC(7
 		
 	};
 
-	aliases {
-		led-strip = &led_strip;
-	}
-
 	// TODO: RGB node(s)
 };
 
