@@ -46,12 +46,33 @@ jobs:
         id: west-zephyr-export
         with:
           args: 'zephyr-export'
-      - name: West Build
+      - name: West Build (nice!60)
         uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
         id: west-build
         with:
           args: 'build "-s zmk/app -b nice_nano -- -DSHIELD=nice60 -DZMK_CONFIG=/github/workspace/config"'
-      - uses: actions/upload-artifact@v2
+      - name: Archive (nice!60)
+        uses: actions/upload-artifact@v2
         with:
-          name: build-output
+          name: nice_nano_nice60
+          path: build/
+      - name: West Build (Lily58 Left)
+        uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
+        id: west-build
+        with:
+          args: 'build "-s zmk/app -b nice_nano -- -DSHIELD=lily58_left -DZMK_CONFIG=/github/workspace/config"'
+      - name: Archive (Lily58 Left)
+        uses: actions/upload-artifact@v2
+        with:
+          name: nice_nano_lily58_left
+          path: build/
+      - name: West Build (Lily58 Right)
+        uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
+        id: west-build
+        with:
+          args: 'build "-s zmk/app -b nice_nano -- -DSHIELD=lily58_right -DZMK_CONFIG=/github/workspace/config"'
+      - name: Archive (Lily58 Right)
+        uses: actions/upload-artifact@v2
+        with:
+          name: nice_nano_lily58_right
           path: build/
