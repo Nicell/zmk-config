@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/nicell
   projects:
     - name: zmk
-      remote: nicell
-      revision: keycodes/f-keys-prsc
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
