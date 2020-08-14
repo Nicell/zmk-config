@@ -61,7 +61,8 @@ jobs:
         id: west-build-lily58-left
         with:
           args: 'build "--pristine -s zmk/app -b nice_nano -- -DSHIELD=lily58_left -DZMK_CONFIG=/github/workspace/config"'
-      - run: mv build/zephyr/zmk.uf2 build/zephyr/left.uf2
+      - name: Rename split (Lily58 Left)
+        run: sudo mv build/zephyr/zmk.uf2 build/zephyr/left.uf2
       - name: Archive (Lily58 Left)
         uses: actions/upload-artifact@v2
         with:
@@ -72,7 +73,8 @@ jobs:
         id: west-build-lily58-right
         with:
           args: 'build "--pristine -s zmk/app -b nice_nano -- -DSHIELD=lily58_right -DZMK_CONFIG=/github/workspace/config"'
-      - run: mv build/zephyr/zmk.uf2 build/zephyr/right.uf2
+      - name: Rename split (Lily58 Right)
+        run: sudo mv build/zephyr/zmk.uf2 build/zephyr/right.uf2
       - name: Archive (Lily58 Right)
         uses: actions/upload-artifact@v2
         with:
