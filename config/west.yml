@@ -4,10 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: nicell
       url-base: https://github.com/nicell
+    - name: pete
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: petejohanson
+      revision: boards/nice-nano-dcdc
       import: app/west.yml
   self:
     path: config
