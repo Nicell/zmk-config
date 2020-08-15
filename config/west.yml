@@ -4,7 +4,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: nicell
       url-base: https://github.com/nicell
-    - name: pete
+    - name: petejohanson
       url-base: https://github.com/petejohanson
   projects:
     - name: zmk
