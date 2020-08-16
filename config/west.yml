@@ -6,10 +6,12 @@ manifest:
       url-base: https://github.com/nicell
     - name: petejohanson
       url-base: https://github.com/petejohanson
+    - name: careyk007
+      url-base: https://github.com/careyk007
   projects:
     - name: zmk
-      remote: nicell
-      revision: split/default-conn-fix
+      remote: careyk007
+      revision: main
       import: app/west.yml
   self:
     path: config
