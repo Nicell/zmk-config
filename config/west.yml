@@ -10,8 +10,8 @@ manifest:
       url-base: https://github.com/careyk007
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: petejohanson
+      revision: bluetooth/ident-management
       import: app/west.yml
   self:
     path: config
