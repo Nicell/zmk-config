@@ -33,11 +33,11 @@
 // |  CTL  |  WIN  |  ALT  |            SPACE              |  ALT  |  WIN  |  MENU  |  CTL  |
 // ------------------------------------------------------------------------------------------
 			bindings = <
-	&bt BT_CLEAR_BONDS &bt BT_PROF_PREV &bt BT_PROF_NEXT &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12  &rgb_ug RGB_EFR
-	&kp TAB  &kp   Q   &kp UARW  &kp   E   &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI &kp   I   &kp   O   &kp   P   &kp LBKT &kp RBKT &kp BSLH 
-	&kp CLCK  &kp LARW  &kp DARW  &kp RARW &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD &kp   K   &kp   L   &kp  SCLN  &kp QUOT &rgb_ug RGB_EFF
-	&kp LSFT   &kp   Z   &kp   X   &kp   C   &kp   V   &kp   B   &kp   N   &kp   M   &kp   CMMA   &kp   DOT   &kp   FSLH           &kp RSFT
-	&kp LCTL &kp   LGUI   &kp   LALT                  &rgb_ug RGB_TOG                    &kp   PRSC    &kp   RGUI     &trans     &kp   DEL
+	&bt BT_CLEAR_BONDS &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12  &rgb_ug RGB_EFR
+	&bt BT_PROF_SEL 0  &kp   Q   &kp UARW  &kp   E   &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI &kp   I   &kp   O   &kp   P   &kp LBKT &kp RBKT &kp BSLH 
+	&bt BT_PROF_SEL 1  &kp LARW  &kp DARW  &kp RARW &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD &kp   K   &kp   L   &kp  SCLN  &kp QUOT &rgb_ug RGB_EFF
+	&bt BT_PROF_SEL 2   &kp   Z   &kp   X   &kp   C   &kp   V   &kp   B   &kp   N   &kp   M   &kp   CMMA   &kp   DOT   &kp   FSLH           &kp RSFT
+	&bt BT_PROF_SEL 3 &kp   LGUI   &kp   LALT                  &rgb_ug RGB_TOG                    &kp   PRSC    &kp   RGUI     &trans     &kp   DEL
 			>;
 		};
 	};
