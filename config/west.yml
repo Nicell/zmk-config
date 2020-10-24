@@ -10,8 +10,8 @@ manifest:
       url-base: https://github.com/careyk007
   projects:
     - name: zmk
-      remote: nicell
-      revision: bluetooth/ident-management
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
