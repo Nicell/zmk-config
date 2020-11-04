@@ -8,10 +8,12 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: careyk007
       url-base: https://github.com/careyk007
+    - name: innovaker
+      url-base: https://github.com/innovaker
   projects:
     - name: zmk
-      remote: nicell
-      revision: boards/boot-partition-fix
+      remote: innovaker
+      revision: hid-keys
       import: app/west.yml
   self:
     path: config
