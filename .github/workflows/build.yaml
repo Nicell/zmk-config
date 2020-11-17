@@ -58,7 +58,7 @@ jobs:
           path: build/zephyr/zmk.uf2
       - name: West Build (nice!60 Shield)
         uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
-        id: west-build-nice60
+        id: west-build-nice60-shield
         with:
           args: 'build "--pristine -s zmk/app -b nice_nano -- -DSHIELD=nice60 -DZMK_CONFIG=/github/workspace/config"'
       - name: Archive (nice!60 Shield)
