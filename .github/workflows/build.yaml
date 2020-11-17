@@ -50,13 +50,23 @@ jobs:
         uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
         id: west-build-nice60
         with:
-          args: 'build "-s zmk/app -b nice_nano -- -DSHIELD=nice60 -DZMK_CONFIG=/github/workspace/config"'
+          args: 'build "-s zmk/app -b nice60 -- -DZMK_CONFIG=/github/workspace/config"'
       - name: Archive (nice!60)
+        uses: actions/upload-artifact@v2
+        with:
+          name: nice60
+          path: build/zephyr/zmk.uf2
+      - name: West Build (nice!60 Shield)
+        uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
+        id: west-build-nice60
+        with:
+          args: 'build "--pristine -s zmk/app -b nice_nano -- -DSHIELD=nice60 -DZMK_CONFIG=/github/workspace/config"'
+      - name: Archive (nice!60 Shield)
         uses: actions/upload-artifact@v2
         with:
           name: nice_nano_nice60
           path: build/zephyr/zmk.uf2
-      - name: Archive nice!60 .config
+      - name: Archive nice!60 Shield .config
         uses: actions/upload-artifact@v2
         with:
           name: nice_nano_config
