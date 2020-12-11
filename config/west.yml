@@ -13,7 +13,7 @@ manifest:
   projects:
     - name: zmk
       remote: innovaker
-      revision: hid-keys
+      revision: zephyr-v2.4.0
       import: app/west.yml
   self:
     path: config
