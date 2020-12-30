@@ -12,8 +12,8 @@ manifest:
       url-base: https://github.com/innovaker
   projects:
     - name: zmk
-      remote: innovaker
-      revision: zephyr-v2.4.0
+      remote: petejohanson
+      revision: ble-split-central-notify-main-thread
       import: app/west.yml
   self:
     path: config
