@@ -37,7 +37,7 @@
 	&bt BT_SEL 0  &kp   Q   &kp UARW  &kp   E   &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI &kp   I   &kp   O   &kp   P   &kp LBKT &kp RBKT &kp BSLH 
 	&bt BT_SEL 1  &kp LARW  &kp DARW  &kp RARW &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD &kp   K   &kp   L   &kp  SCLN  &kp QUOT &rgb_ug RGB_EFF
 	&bt BT_SEL 2   &kp   Z   &kp   X   &kp   C   &kp   V   &kp   B   &kp   N   &kp   M   &kp   CMMA   &kp   DOT   &kp   FSLH           &kp RSFT
-	&bt BT_SEL 3 &kp   LGUI   &kp   LALT                  &rgb_ug RGB_TOG                    &kp   PRSC    &kp   RGUI     &trans     &kp   DEL
+	&bt BT_SEL 3 &kp   LGUI   &kp   LALT                  &rgb_ug RGB_TOG                    &kp   PRSC    &out OUT_TOG     &trans     &kp   DEL
 			>;
 		};
 	};
