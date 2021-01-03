@@ -14,8 +14,8 @@ manifest:
       url-base: https://github.com/okke-formsma
   projects:
     - name: zmk
-      remote: okke-formsma
-      revision: modmorph
+      remote: petejohanson
+      revision: display/highest-layer-label-display
       import: app/west.yml
   self:
     path: config
