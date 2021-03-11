@@ -25,19 +25,19 @@
 		};
 
 		rgb_layer {
-// ------------------------------------------------------------------------------------------
-// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   |
-// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
-// | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
-// |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
-// |  CTL  |  WIN  |  ALT  |            SPACE              |  ALT  |  WIN  |  MENU  |  CTL  |
-// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------
+// | BT CLR | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10  | F11 | F12 | EFFECT REV |
+// |  BT 1   |   |  UP |   | HUEUP | SATUP | BRIUP | SPDUP |   |     |    |     |     |           |
+// |   BT 2   | LT |  DN  | RT | HUEDN | SATDN | BRIDN | SPDDN |   |     |   |     |  EFFECT FORW |
+// |    BT 3     |     |      |      |     |     |     |     |     |     |     |                  |
+// |   BT 4  |      |      |             TOG RGB                | PRT SCR |       |       |  DEL  |
+// ------------------------------------------------------------------------------------------------
 			bindings = <
-	&bt BT_CLR &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12  &rgb_ug RGB_EFR
-	&bt BT_SEL 0  &kp   Q   &kp UARW  &kp   E   &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI &kp   I   &kp   O   &kp   P   &kp LBKT &kp RBKT &kp BSLH 
-	&bt BT_SEL 1  &kp LARW  &kp DARW  &kp RARW &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD &kp   K   &kp   L   &kp  SCLN  &kp QUOT &rgb_ug RGB_EFF
-	&bt BT_SEL 2   &kp   Z   &kp   X   &kp   C   &kp   V   &kp   B   &kp   N   &kp   M   &kp   CMMA   &kp   DOT   &kp   FSLH           &kp RSFT
-	&bt BT_SEL 3 &kp   LGUI   &kp   LALT                  &rgb_ug RGB_TOG                    &kp   PRSC    &kp   RGUI     &trans     &kp   DEL
+	&bt BT_CLR   &kp F1    &kp F2    &kp F3  &kp F4           &kp F5          &kp F6          &kp F7          &kp F8   &kp F9   &kp F10  &kp F11 &kp F12  &rgb_ug RGB_EFR
+	&bt BT_SEL 0  &trans    &kp UARW  &trans  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI &trans   &trans   &trans   &trans  &trans           &trans 
+	&bt BT_SEL 1   &kp LARW  &kp DARW  &kp RARW &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD &trans   &trans   &trans  &trans          &rgb_ug RGB_EFF
+	&bt BT_SEL 2    &trans    &trans    &trans   &trans          &trans          &trans          &trans          &trans   &trans   &trans                          &trans
+	&bt BT_SEL 3  &trans   &trans                            &rgb_ug RGB_TOG                                    &kp   PRSC       &trans      &trans             &kp   DEL
 			>;
 		};
 	};
