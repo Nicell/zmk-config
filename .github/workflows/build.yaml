@@ -51,11 +51,15 @@ jobs:
         id: west-build-nice60
         with:
           args: 'build "-s zmk/app -b nice60 -- -DZMK_CONFIG=/github/workspace/config"'
+      - name: Rename nice!60
+        run: sudo mv build/zephyr/zmk.uf2 build/zephyr/nice60zmk.uf2 && sudo mv build/zephyr/zmk.hex build/zephyr/nice60zmk.hex
       - name: Archive (nice!60)
         uses: actions/upload-artifact@v2
         with:
           name: nice60
-          path: build/zephyr/zmk.uf2
+          path: |
+            build/zephyr/nice60zmk.uf2
+            build/zephyr/nice60zmk.hex
       - name: West Build (nice!60 Shield)
         uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
         id: west-build-nice60-shield
