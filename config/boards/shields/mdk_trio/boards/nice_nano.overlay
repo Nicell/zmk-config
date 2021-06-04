@@ -5,18 +5,18 @@
 &spi1 {
 	status = "okay";
 	compatible = "nordic,nrf-spim";
-	sck-pin = <7>;
-	mosi-pin = <5>;
-	miso-pin = <8>;
-	cs-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+	sck-pin = <20>;
+	mosi-pin = <17>;
+	miso-pin = <24>;
+	cs-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;
 
 	ls0xx@0 {
 		compatible = "sharp,ls0xx";
 		label = "DISPLAY";
 		spi-max-frequency = <2000000>;
 		reg = <0>;
-		width = <144>;
-		height = <168>;
-		disp-en-gpios = <&gpio0 23 GPIO_ACTIVE_HIGH>;
+		width = <160>;
+		height = <68>;
+		disp-en-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;
 	};
 };
