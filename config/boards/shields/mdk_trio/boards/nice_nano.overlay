@@ -17,6 +17,5 @@
 		reg = <0>;
 		width = <160>;
 		height = <68>;
-		disp-en-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;
 	};
 };
