@@ -41,7 +41,7 @@ jobs:
         run: west build -s zmk/app -b nice_nano -- -DSHIELD=mdk_trio -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Nano DTS File
         if: ${{ always() }}
-        run: cat -n build/zephyr/nic_nano.dts.pre.tmp
+        run: cat -n build/zephyr/nice_nano.dts.pre.tmp
       - name: nice_nano .config
         if: ${{ always() }}
         run: cat -n build/zephyr/.config
