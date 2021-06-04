@@ -14,8 +14,8 @@ manifest:
       url-base: https://github.com/okke-formsma
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: petejohanson
+      revision: zephyr-2.5-lvgl-theme-fixes
       import: app/west.yml
   self:
     path: config

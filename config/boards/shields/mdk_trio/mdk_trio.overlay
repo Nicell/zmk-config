@@ -1,0 +1,29 @@
+/*
+ * Copyright (c) 2020 Pete Johanson, Richard Jones
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/matrix-transform.h>
+
+/ {
+	chosen {
+		zmk,kscan = &kscan0;
+	};
+
+	kscan0: kscan {
+		compatible = "zmk,kscan-gpio-matrix";
+		label = "KSCAN";
+
+		diode-direction = "col2row";
+		col-gpios
+			= <&gpio1 15 (GPIO_ACTIVE_HIGH)>
+			, <&gpio1 13 (GPIO_ACTIVE_HIGH)>
+			, <&gpio1 11 (GPIO_ACTIVE_HIGH)>
+			;
+		row-gpios
+			= <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			;
+	};
+};
+
